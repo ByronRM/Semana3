@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="bromeroEP1.Registro">
+    <ContentPage.Content>
+      <StackLayout>
+
+        <Label x:Name="lblUsuario"  HorizontalTextAlignment="Start" FontSize="16" ></Label>
+        <Label x:Name="lblRegistroDatos" HorizontalTextAlignment="Center" FontSize="22" Text="Registro de Estudiante"></Label>
+            <Label ></Label>
+            <Label x:Name="lbldatos" HorizontalTextAlignment="Start" FontSize="18" Text="ingrese los datos del estudiante:"></Label>
+            <Label ></Label>
+            <Grid >
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                   
+                </Grid.ColumnDefinitions>
+
+                <Label Text="Nombre" FontSize="18" Grid.Row="0" Grid.Column="0"></Label>
+                <Entry x:Name="txtNombre" Placeholder="Ingrese el nombre" Grid.Row="0" Grid.Column="1" ></Entry>
+                <Label Text="Monto Inicial" FontSize="18" Grid.Row="1" Grid.Column="0"></Label>
+                <Entry x:Name="txtValorInicial" Placeholder="Ingrese el valor inicial" Keyboard="Numeric" Grid.Row="1" Grid.Column="1" ></Entry>
+                <Label Text="Pago Mensual" FontSize="18" Grid.Row="2" Grid.Column="0"></Label>
+                <Entry x:Name="txtPagoMensual" Placeholder="Pago Mensual" IsReadOnly="True" Grid.Row="2" Grid.Column="1" ></Entry>
+
+            </Grid>
+            
+          <Button x:Name="btnCalcular" Text="Calcular" Clicked="btnCalcular_Clicked" ></Button>
+         <Button x:Name="btnGardar" Text="Gardar" Clicked="btnGardar_Clicked"></Button>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+

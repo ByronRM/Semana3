@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="bromeroEP1.Resumen">
+    <ContentPage.Content>
+         <StackLayout>
+              <Label x:Name="lblUsuario"  HorizontalTextAlignment="Start" FontSize="16" ></Label>
+           
+            <Label Text="Pago Total  " HorizontalTextAlignment="Center" FontSize="22"></Label>
+             <Label></Label>
+             <Label></Label>
+            <Label x:Name="lblEstud" HorizontalTextAlignment="Start" FontSize="22"></Label>
+            <Label x:Name="lbltCancelado" HorizontalTextAlignment="Start" FontSize="22"></Label>
+
+
+            <Button x:Name="btnAyuda" Text="Ayuda" Clicked="btnAyuda_Clicked"></Button>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
+
